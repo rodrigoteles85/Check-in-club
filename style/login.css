@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/assets/img/039051b5-ca5c-4113-9f05-68baeb978899.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.inicio {
+  width: 420px;
+  background-color: transparent;
+  border: var(--border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-white);
+  padding: var(--spacing-4xl);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: var(--backdrop-blur-md);
+}
+.inicio h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: var(--border-light);
+  border-radius: var(--radius-full);
+  outline: none;
+  font-size: 16px;
+  color: var(--color-white);
+  padding: 20px var(--spacing-4xl) 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: var(--color-white);
+}
+.input-box i {
+  position: absolute;
+  right: var(--spacing-4xl);
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 15px 0;
+}
+.remember-forgot label input {
+  accent-color: var(--color-white);
+  margin-right: 5px;
+}
+.remember-forgot a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+.login {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  box-shadow: var(--shadow-sm);
+  margin-top: 20px;
+}
+.login:hover {
+  background-color: transparent;
+  border: var(--border-light);
+  color: var(--color-white);
+  transition: var(--transition-base);
+}
+.registro {
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-size: 14px;
+}
+.registro a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+}
+.registro a:hover {
+  text-decoration: underline;
+}

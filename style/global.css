@@ -1,0 +1,178 @@
+/* ========================================
+   SISTEMA DE VARIÁVEIS GLOBAL - Check in Club
+   ======================================== */
+
+:root {
+  /* ==================
+     CORES - PALETTE
+     ================== */
+
+  /* Primárias */
+  --color-primary: #ffd700;
+  --color-primary-dark: #d4af37;
+
+  /* Secundárias */
+  --color-secondary: #000;
+  --color-secondary-light: #222;
+
+  /* Neutros */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray-light: #f5f6fa;
+  --color-gray-border: #eee;
+  --color-gray-text: #666;
+
+  /* ==================
+     TIPOGRAFIA
+     ================== */
+
+  /* Fontes */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", Arial, sans-serif;
+
+  /* Tamanhos */
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-base: 1.1rem;
+  --font-size-lg: 1.4rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 3rem;
+
+  /* Pesos */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ==================
+     ESPAÇAMENTO
+     ================== */
+
+  --spacing-xs: 8px;
+  --spacing-sm: 10px;
+  --spacing-md: 12px;
+  --spacing-lg: 18px;
+  --spacing-xl: 22px;
+  --spacing-2xl: 28px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 40px;
+
+  /* ==================
+     BORDER RADIUS
+     ================== */
+
+  --radius-sm: 15px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 30px;
+  --radius-full: 40px;
+
+  /* ==================
+     SOMBRAS
+     ================== */
+
+  --shadow-sm: 0 0 10px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.15);
+
+  /* ==================
+     EFEITOS
+     ================== */
+
+  --backdrop-blur-sm: blur(10px);
+  --backdrop-blur-md: blur(30px);
+
+  /* ==================
+     TRANSIÇÕES
+     ================== */
+
+  --transition-fast: 0.25s ease;
+  --transition-base: 0.3s ease;
+
+  /* ==================
+     BORDERS
+     ================== */
+
+  --border-width: 2px;
+  --border-light: var(--border-width) solid rgba(255, 255, 255, 0.2);
+  --border-dark: var(--border-width) solid var(--color-gray-border);
+
+  /* ==================
+     GRID & LAYOUT
+     ================== */
+
+  --container-max-width: 1200px;
+  --container-padding: var(--spacing-4xl);
+  --grid-gap: var(--spacing-3xl);
+  --card-min-width: 340px;
+
+  /* ==================
+     STATES & OVERLAYS
+     ================== */
+
+  --overlay-dark: rgba(0, 0, 0, 0.55);
+  --bg-transparent: rgba(255, 255, 255, 0.15);
+}
+
+/* ========================================
+   RESET GLOBAL
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-gray-light);
+  color: var(--color-black);
+}
+
+/* ========================================
+   UTILITÁRIOS
+   ======================================== */
+
+/* Botões */
+.btn-base {
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-sm) var(--spacing-2xl);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  border: var(--border-width) solid var(--color-black);
+  transition: all var(--transition-fast);
+}
+
+.btn-primary {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+/* Textos */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-gray-text);
+}
+
+.text-muted {
+  color: var(--color-secondary-light);
+}
+
+/* Backgrounds */
+.bg-light {
+  background: var(--color-gray-light);
+}
+
+.bg-white {
+  background: var(--color-white);
+}
