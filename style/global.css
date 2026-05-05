@@ -125,7 +125,6 @@
 
 body {
   font-family: var(--font-sans);
-  background: var(--color-gray-light);
   color: var(--color-black);
 }
 

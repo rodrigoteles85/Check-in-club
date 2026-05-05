@@ -3,14 +3,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("/assets/img/039051b5-ca5c-4113-9f05-68baeb978899.jpg");
+  background-image: url("../assets/background-image.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .inicio {
   width: 420px;
-  background-color: transparent;
   border: var(--border-light);
   border-radius: var(--radius-sm);
   color: var(--color-white);
@@ -83,6 +83,7 @@ body {
   box-shadow: var(--shadow-sm);
   margin-top: 20px;
 }
+
 .login:hover {
   background-color: transparent;
   border: var(--border-light);
